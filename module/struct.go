@@ -15,7 +15,7 @@ type User struct {
 type EdgeOwnerToTimelineMedia struct {
 	Count    int64    `json:"count"`
 	PageInfo PageInfo `json:"page_info"`
-	Edges []Edges                  `json:"edges"`
+	Edges    []Edges  `json:"edges"`
 }
 
 type PageInfo struct {
@@ -31,8 +31,8 @@ type EdgesNode struct {
 	ID                   string              `json:"id"`
 	Shortcode            string              `json:"shortcode"`
 	EdgeMediaPreviewLike EdgeMediaPrivewLike `json:"edge_media_preview_like"`
-	EdgeMediaToCaption  EdgeMediaToCaption `json:"edge_media_to_caption"`
-	Owner            Owner    `json:"owner"`
+	EdgeMediaToCaption   EdgeMediaToCaption  `json:"edge_media_to_caption"`
+	Owner                Owner               `json:"owner"`
 }
 
 type EdgeMediaPrivewLike struct {
